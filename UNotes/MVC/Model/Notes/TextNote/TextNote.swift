@@ -8,22 +8,22 @@
 
 import UIKit
 
-protocol INote {
+protocol ITextNote {
     var id: String? { get }
     var title: String? { get set }
     var desc: String? { get set }
 }
 
-struct NoteStruct {
+struct TextNoteStruct {
     var id: String?
 
     var title: String? = nil
     var desc: String? = nil
 }
 
-extension NoteStruct: INote { }
+extension TextNoteStruct: ITextNote { }
 
-extension NoteStruct {
+extension TextNoteStruct {
     init(_ realmNote: RealmNote) {
         id = realmNote.id
         title = realmNote.title

@@ -20,20 +20,20 @@ class NotesDS {
 extension NotesDS: NotesDataStore { }
 
 extension NotesDS: NotesDataStoreRead {
-    func fetchAllNotes() -> [INote] {
+    func fetchAllNotes() -> [ITextNote] {
         let dbItems: [RealmNote] = Array(_manager.get())
 
-        return dbItems.map { NoteStruct($0) }
+        return dbItems.map { TextNoteStruct($0) }
     }
 }
 
 extension NotesDS: NotesDataStoreWrite {
-    func addNote(_ note: INote) {
+    func addNote(_ note: ITextNote) {
         let rlmNote = RealmNote(note)
         _manager.insertOrUpdate(rlmNote)
     }
 
-    func updateNote(_ note: INote) {
+    func updateNote(_ note: ITextNote) {
         let rlmNote = RealmNote(note)
         _manager.insertOrUpdate(rlmNote)
     }

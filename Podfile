@@ -5,6 +5,6 @@ target 'UNotes' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'RealmSwift', '~> 5.0.2'
+  pod 'RealmSwift', '~> 5.3.5'
 
 end

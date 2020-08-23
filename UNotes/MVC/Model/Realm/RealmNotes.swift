@@ -18,7 +18,7 @@ class RealmNote: Object {
       return "id"
     }
 
-    init(_ note: INote) {
+    init(_ note: ITextNote) {
         guard let id = note.id else { return }
 
         self.id = id

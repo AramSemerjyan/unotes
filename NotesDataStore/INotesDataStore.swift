@@ -9,12 +9,12 @@
 import UIKit
 
 protocol NotesDataStoreRead {
-    func fetchAllNotes() -> [INote]
+    func fetchAllNotes() -> [ITextNote]
 }
 
 protocol NotesDataStoreWrite {
-    func addNote(_ note: INote)
-    func updateNote(_ note: INote)
+    func addNote(_ note: ITextNote)
+    func updateNote(_ note: ITextNote)
 }
 
 protocol NotesDataStore: NotesDataStoreRead, NotesDataStoreWrite { }

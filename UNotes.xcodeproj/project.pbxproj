@@ -12,17 +12,26 @@
 		AE99C22024898CB600AC52A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99C21F24898CB600AC52A2 /* AppDelegate.swift */; };
 		AE99C22924898CB800AC52A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE99C22824898CB800AC52A2 /* Assets.xcassets */; };
 		AE99C22C24898CB800AC52A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE99C22A24898CB800AC52A2 /* LaunchScreen.storyboard */; };
-		AE99C23D24898D4200AC52A2 /* AllNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99C23C24898D4200AC52A2 /* AllNotes.swift */; };
-		AE99C24024898D5900AC52A2 /* AllNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99C23F24898D5900AC52A2 /* AllNotesViewModel.swift */; };
-		AE99C24224898D7D00AC52A2 /* AllNotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE99C24124898D7D00AC52A2 /* AllNotes.storyboard */; };
+		AE99C23D24898D4200AC52A2 /* AllFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99C23C24898D4200AC52A2 /* AllFiles.swift */; };
+		AE99C24024898D5900AC52A2 /* AllFilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99C23F24898D5900AC52A2 /* AllFilesViewModel.swift */; };
+		AE99C24224898D7D00AC52A2 /* AllFiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE99C24124898D7D00AC52A2 /* AllFiles.storyboard */; };
 		AE99C24424898D9C00AC52A2 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99C24324898D9C00AC52A2 /* UIViewControllerExtension.swift */; };
 		AEAAEE9A248A9CB2002CC6D4 /* RealmNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAEE99248A9CB2002CC6D4 /* RealmNotes.swift */; };
-		AEAAEE9D248ACDB2002CC6D4 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAEE9C248ACDB2002CC6D4 /* Note.swift */; };
+		AEAAEE9D248ACDB2002CC6D4 /* TextNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAEE9C248ACDB2002CC6D4 /* TextNote.swift */; };
 		AEAAEE9F248ADD17002CC6D4 /* INotesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAEE9E248ADD17002CC6D4 /* INotesDataStore.swift */; };
+		AEAAEEA2248AF8F2002CC6D4 /* IFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAEEA1248AF8F2002CC6D4 /* IFile.swift */; };
+		AEAAEEA5248AF947002CC6D4 /* IFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAEEA4248AF947002CC6D4 /* IFolder.swift */; };
+		AEBA1AC324F2F193007DECC1 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBA1AC224F2F193007DECC1 /* IntExtension.swift */; };
+		AEBA1AC624F2F444007DECC1 /* FileSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBA1AC524F2F444007DECC1 /* FileSize.swift */; };
+		AEBDA9D2248AFEE900EE82F3 /* AudioNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBDA9D1248AFEE900EE82F3 /* AudioNote.swift */; };
+		AEBDA9D5248AFF2400EE82F3 /* NoteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBDA9D4248AFF2400EE82F3 /* NoteContent.swift */; };
 		AEFB455724898F4100B00A72 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB455624898F4100B00A72 /* NSObjectExtension.swift */; };
 		AEFB455A2489905A00B00A72 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB45592489905A00B00A72 /* UIColorExtension.swift */; };
 		AEFB455D248990CE00B00A72 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB455C248990CE00B00A72 /* UIImageExtension.swift */; };
 		AEFB45652489954D00B00A72 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB45642489954D00B00A72 /* RealmManager.swift */; };
+		AEFFADA924F2D57100B8A7D4 /* FileImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFFADA824F2D57100B8A7D4 /* FileImages.swift */; };
+		AEFFADCE24F2E39000B8A7D4 /* FileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFFADCC24F2E39000B8A7D4 /* FileTableViewCell.swift */; };
+		AEFFADCF24F2E39000B8A7D4 /* FileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEFFADCD24F2E39000B8A7D4 /* FileTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,17 +44,26 @@
 		AE99C22824898CB800AC52A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE99C22B24898CB800AC52A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE99C22D24898CB800AC52A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		AE99C23C24898D4200AC52A2 /* AllNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNotes.swift; sourceTree = "<group>"; };
-		AE99C23F24898D5900AC52A2 /* AllNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNotesViewModel.swift; sourceTree = "<group>"; };
-		AE99C24124898D7D00AC52A2 /* AllNotes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllNotes.storyboard; sourceTree = "<group>"; };
+		AE99C23C24898D4200AC52A2 /* AllFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFiles.swift; sourceTree = "<group>"; };
+		AE99C23F24898D5900AC52A2 /* AllFilesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFilesViewModel.swift; sourceTree = "<group>"; };
+		AE99C24124898D7D00AC52A2 /* AllFiles.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllFiles.storyboard; sourceTree = "<group>"; };
 		AE99C24324898D9C00AC52A2 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		AEAAEE99248A9CB2002CC6D4 /* RealmNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmNotes.swift; sourceTree = "<group>"; };
-		AEAAEE9C248ACDB2002CC6D4 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		AEAAEE9C248ACDB2002CC6D4 /* TextNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNote.swift; sourceTree = "<group>"; };
 		AEAAEE9E248ADD17002CC6D4 /* INotesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INotesDataStore.swift; sourceTree = "<group>"; };
+		AEAAEEA1248AF8F2002CC6D4 /* IFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFile.swift; sourceTree = "<group>"; };
+		AEAAEEA4248AF947002CC6D4 /* IFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFolder.swift; sourceTree = "<group>"; };
+		AEBA1AC224F2F193007DECC1 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		AEBA1AC524F2F444007DECC1 /* FileSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSize.swift; sourceTree = "<group>"; };
+		AEBDA9D1248AFEE900EE82F3 /* AudioNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioNote.swift; sourceTree = "<group>"; };
+		AEBDA9D4248AFF2400EE82F3 /* NoteContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteContent.swift; sourceTree = "<group>"; };
 		AEFB455624898F4100B00A72 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		AEFB45592489905A00B00A72 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		AEFB455C248990CE00B00A72 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		AEFB45642489954D00B00A72 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		AEFFADA824F2D57100B8A7D4 /* FileImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImages.swift; sourceTree = "<group>"; };
+		AEFFADCC24F2E39000B8A7D4 /* FileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTableViewCell.swift; sourceTree = "<group>"; };
+		AEFFADCD24F2E39000B8A7D4 /* FileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +81,8 @@
 		AE99C21324898CB600AC52A2 = {
 			isa = PBXGroup;
 			children = (
+				AEFFAD9D24F2D4CE00B8A7D4 /* Images */,
+				AEFB45632489943100B00A72 /* NotesDataStore */,
 				AE99C21E24898CB600AC52A2 /* UNotes */,
 				AE99C21D24898CB600AC52A2 /* Products */,
 				AF16CE473C85CCBE06F4E36D /* Pods */,
@@ -104,6 +124,7 @@
 		AE99C23424898CC600AC52A2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				AEBA1AC424F2F43A007DECC1 /* FileSize */,
 				AE99C23624898CD100AC52A2 /* Extensions */,
 			);
 			path = Helper;
@@ -121,6 +142,7 @@
 		AE99C23624898CD100AC52A2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AEBA1AC124F2F182007DECC1 /* Int */,
 				AEFB455B248990C300B00A72 /* UIImage */,
 				AEFB45582489904E00B00A72 /* UIColor */,
 				AEFB455524898F3000B00A72 /* NSObject */,
@@ -148,6 +170,7 @@
 		AE99C23924898CF100AC52A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AEFFADCA24F2E36800B8A7D4 /* FileCells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,7 +178,9 @@
 		AE99C23A24898CF500AC52A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AEAAEE9B248ACDA7002CC6D4 /* Note */,
+				AEBDA9CF248AFED400EE82F3 /* Notes */,
+				AEAAEEA3248AF936002CC6D4 /* Folder */,
+				AEAAEEA0248AF8E9002CC6D4 /* File */,
 				AEAAEE98248A9C9D002CC6D4 /* Realm */,
 			);
 			path = Model;
@@ -164,9 +189,9 @@
 		AE99C23B24898D2600AC52A2 /* AllNotes */ = {
 			isa = PBXGroup;
 			children = (
-				AE99C23C24898D4200AC52A2 /* AllNotes.swift */,
-				AE99C23F24898D5900AC52A2 /* AllNotesViewModel.swift */,
-				AE99C24124898D7D00AC52A2 /* AllNotes.storyboard */,
+				AE99C23C24898D4200AC52A2 /* AllFiles.swift */,
+				AE99C23F24898D5900AC52A2 /* AllFilesViewModel.swift */,
+				AE99C24124898D7D00AC52A2 /* AllFiles.storyboard */,
 			);
 			path = AllNotes;
 			sourceTree = "<group>";
@@ -179,12 +204,70 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
-		AEAAEE9B248ACDA7002CC6D4 /* Note */ = {
+		AEAAEE9B248ACDA7002CC6D4 /* TextNote */ = {
 			isa = PBXGroup;
 			children = (
-				AEAAEE9C248ACDB2002CC6D4 /* Note.swift */,
+				AEAAEE9C248ACDB2002CC6D4 /* TextNote.swift */,
 			);
-			path = Note;
+			path = TextNote;
+			sourceTree = "<group>";
+		};
+		AEAAEEA0248AF8E9002CC6D4 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				AEAAEEA1248AF8F2002CC6D4 /* IFile.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		AEAAEEA3248AF936002CC6D4 /* Folder */ = {
+			isa = PBXGroup;
+			children = (
+				AEAAEEA4248AF947002CC6D4 /* IFolder.swift */,
+			);
+			path = Folder;
+			sourceTree = "<group>";
+		};
+		AEBA1AC124F2F182007DECC1 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				AEBA1AC224F2F193007DECC1 /* IntExtension.swift */,
+			);
+			path = Int;
+			sourceTree = "<group>";
+		};
+		AEBA1AC424F2F43A007DECC1 /* FileSize */ = {
+			isa = PBXGroup;
+			children = (
+				AEBA1AC524F2F444007DECC1 /* FileSize.swift */,
+			);
+			path = FileSize;
+			sourceTree = "<group>";
+		};
+		AEBDA9CF248AFED400EE82F3 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				AEBDA9D3248AFF1600EE82F3 /* NoteContent */,
+				AEAAEE9B248ACDA7002CC6D4 /* TextNote */,
+				AEBDA9D0248AFED900EE82F3 /* AudioNote */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		AEBDA9D0248AFED900EE82F3 /* AudioNote */ = {
+			isa = PBXGroup;
+			children = (
+				AEBDA9D1248AFEE900EE82F3 /* AudioNote.swift */,
+			);
+			path = AudioNote;
+			sourceTree = "<group>";
+		};
+		AEBDA9D3248AFF1600EE82F3 /* NoteContent */ = {
+			isa = PBXGroup;
+			children = (
+				AEBDA9D4248AFF2400EE82F3 /* NoteContent.swift */,
+			);
+			path = NoteContent;
 			sourceTree = "<group>";
 		};
 		AEFB455424898F2700B00A72 /* UIViewController */ = {
@@ -222,7 +305,6 @@
 		AEFB455E248992CA00B00A72 /* DB */ = {
 			isa = PBXGroup;
 			children = (
-				AEFB45632489943100B00A72 /* NotesDataStore */,
 				AEFB45612489940700B00A72 /* LocalDB */,
 			);
 			path = DB;
@@ -243,6 +325,39 @@
 				AEAAEE9E248ADD17002CC6D4 /* INotesDataStore.swift */,
 			);
 			path = NotesDataStore;
+			sourceTree = "<group>";
+		};
+		AEFFAD9D24F2D4CE00B8A7D4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AEFFAD9E24F2D4D500B8A7D4 /* File */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		AEFFAD9E24F2D4D500B8A7D4 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				AEFFADA824F2D57100B8A7D4 /* FileImages.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		AEFFADCA24F2E36800B8A7D4 /* FileCells */ = {
+			isa = PBXGroup;
+			children = (
+				AEFFADCB24F2E37300B8A7D4 /* Folder */,
+			);
+			path = FileCells;
+			sourceTree = "<group>";
+		};
+		AEFFADCB24F2E37300B8A7D4 /* Folder */ = {
+			isa = PBXGroup;
+			children = (
+				AEFFADCC24F2E39000B8A7D4 /* FileTableViewCell.swift */,
+				AEFFADCD24F2E39000B8A7D4 /* FileTableViewCell.xib */,
+			);
+			path = Folder;
 			sourceTree = "<group>";
 		};
 		AF16CE473C85CCBE06F4E36D /* Pods */ = {
@@ -322,9 +437,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE99C24224898D7D00AC52A2 /* AllNotes.storyboard in Resources */,
+				AE99C24224898D7D00AC52A2 /* AllFiles.storyboard in Resources */,
 				AE99C22C24898CB800AC52A2 /* LaunchScreen.storyboard in Resources */,
 				AE99C22924898CB800AC52A2 /* Assets.xcassets in Resources */,
+				AEFFADCF24F2E39000B8A7D4 /* FileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,14 +497,22 @@
 				AEAAEE9F248ADD17002CC6D4 /* INotesDataStore.swift in Sources */,
 				AEFB455724898F4100B00A72 /* NSObjectExtension.swift in Sources */,
 				AEFB455D248990CE00B00A72 /* UIImageExtension.swift in Sources */,
+				AEBA1AC624F2F444007DECC1 /* FileSize.swift in Sources */,
+				AEBDA9D2248AFEE900EE82F3 /* AudioNote.swift in Sources */,
+				AEFFADCE24F2E39000B8A7D4 /* FileTableViewCell.swift in Sources */,
 				AEAAEE9A248A9CB2002CC6D4 /* RealmNotes.swift in Sources */,
-				AE99C23D24898D4200AC52A2 /* AllNotes.swift in Sources */,
+				AEAAEEA5248AF947002CC6D4 /* IFolder.swift in Sources */,
+				AEFFADA924F2D57100B8A7D4 /* FileImages.swift in Sources */,
+				AE99C23D24898D4200AC52A2 /* AllFiles.swift in Sources */,
+				AEBA1AC324F2F193007DECC1 /* IntExtension.swift in Sources */,
 				AEFB45652489954D00B00A72 /* RealmManager.swift in Sources */,
 				AE99C22024898CB600AC52A2 /* AppDelegate.swift in Sources */,
 				AE96123C248999AC001E5019 /* NotesDataStore.swift in Sources */,
-				AE99C24024898D5900AC52A2 /* AllNotesViewModel.swift in Sources */,
+				AE99C24024898D5900AC52A2 /* AllFilesViewModel.swift in Sources */,
+				AEAAEEA2248AF8F2002CC6D4 /* IFile.swift in Sources */,
+				AEBDA9D5248AFF2400EE82F3 /* NoteContent.swift in Sources */,
 				AEFB455A2489905A00B00A72 /* UIColorExtension.swift in Sources */,
-				AEAAEE9D248ACDB2002CC6D4 /* Note.swift in Sources */,
+				AEAAEE9D248ACDB2002CC6D4 /* TextNote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
